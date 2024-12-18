@@ -47,6 +47,23 @@
       background-color: var(--bg-color-2-dark);
     }
 
+    .theme-selector {
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .theme-selector select {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      
+      
+    }
+    
     header {
       background-color: #333;
       color: #fff;
@@ -74,17 +91,7 @@
       text-decoration: underline;
     }
 
-    .theme-selector {
-      color: #fff;
-    }
-
-    .theme-selector select {
-      background-color: #555;
-      color: #fff;
-      border: none;
-      padding: 0.5rem;
-      border-radius: 5px;
-    }
+   
 
     section {
       padding: 6rem 1rem 3rem;
@@ -95,12 +102,11 @@
       display: flex;
       gap: 2rem;
       padding: 2rem;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: nowrap;
       flex-direction: row;
       justify-content: center;
     }
-
     .profile {
       flex: 1;
       max-width: 300px;
@@ -135,6 +141,28 @@
       margin-top: 2rem;
       color: inherit;
     }
+    .columns {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    .column h3 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .column ul li {
+      margin: 0.5rem 0;
+    }
   </style>
 </head>
 <body class="light">
@@ -167,7 +195,41 @@
     <div class="about-text">
       <h1>Abdulrahman Awad</h1>
       <p>Abdulrahman Awad is a data analyst passionate about utilizing data tools to drive business insights and support decision-making. He graduated from the Faculty of Science at Ain Shams University, computer science division, and worked as a data analyst at ILLA, a logistics solution start-up while studying During Abdulrahman’s career, He has developed expertise in multiple BI tools e.g., Metabase, programming languages e.g., python, and advanced mathematics, which he has applied to solve complex data challenges and create analytical dashboards. One of Abdulrahman's proudest achievements was his graduation project, in which he used PyTorch to create a deep learning model that achieved 97% accuracy in recognizing handwritten Arabic words. He also enjoys working collaboratively and he adamantly uses critical thinking to achieve his goals. In his free time, Abdulrahman enjoys making 3D models and video games and exploring new technologies that can facilitate his work as a data analyst.</p>
-    </div>
+    
+    <div class="columns">
+      <div class="column">
+        <h3>Interests</h3>
+        <ul>
+          <li>Data Science</li>
+          <li>AI</li>
+          <li>Software Engineering</li>
+          <li>Computer Science</li>
+          <li>3D Modeling</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Skills</h3>
+        <ul>
+          <li><b>Soft Skills:</b></li>
+          <li>Problem-Solving</li>
+          <li>Team Management</li>
+          <li>Outstanding Teammate</li>
+          <li><b>Technical Skills:</b></li>
+          <li>Python, C++, Java</li>
+          <li>Metabase Dashboards</li>
+          <li>Machine Learning</li>
+          <li>Excel & Sheets</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Education</h3>
+        <ul>
+          <li>Bachelor's in Computer Science</li>
+          <li>Faculty of Science, Ain Shams University</li>
+          <li>2019-2023</li>
+          <li>GPA: 3.0/4</li>
+        </ul>
+      </div>
   </section>
 
   <section id="projects">
